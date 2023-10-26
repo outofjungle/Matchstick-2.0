@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -5259,7 +5259,7 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TBL_5_08_2415_HORI
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="STATUS_LED$2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GND@1"/>
 <wire x1="101.82" y1="67.58" x2="104.36" y2="67.58" width="0.1524" layer="91"/>
