@@ -3,10 +3,10 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -5158,7 +5158,7 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TBL_5_08_2415_HORI
 <part name="U1" library="custom" library_urn="urn:adsk.eagle:library:28163416" deviceset="M5STAMP-PICO" device="" package3d_urn="urn:adsk.eagle:package:33764911/2" value="M5STAMP PICO"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA5_L" device="" value="ESP32 PICO"/>
 <part name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-5.2MM" package3d_urn="urn:adsk.eagle:package:40167/1" value="FLASH"/>
-<part name="D17" library="LED" library_urn="urn:adsk.eagle:library:22900745" deviceset="CHIP-FLAT-R" device="_0805" package3d_urn="urn:adsk.eagle:package:24294806/1" value="LED_RED"/>
+<part name="D1" library="LED" library_urn="urn:adsk.eagle:library:22900745" deviceset="CHIP-FLAT-R" device="_0805" package3d_urn="urn:adsk.eagle:package:24294806/1" value="LED_RED"/>
 <part name="R1" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" deviceset="R-US" device="CHIP-0805(2012-METRIC)" package3d_urn="urn:adsk.eagle:package:16378559/2" technology="_" value="330"/>
 <part name="J2" library="custom" library_urn="urn:adsk.eagle:library:28163416" deviceset="6_PIN_SERIAL_TARGET" device="SILK" package3d_urn="urn:adsk.eagle:package:37733454/1" value="TARGET"/>
 <part name="S2" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="SWITCH-SPDT" device="-SMD-RIGHT-ANGLE" package3d_urn="urn:adsk.eagle:package:40179/1" value="SW"/>
@@ -5190,7 +5190,7 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TBL_5_08_2415_HORI
 <attribute name="NAME" x="134.84" y="57.674" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="134.84" y="56.15" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="D17" gate="G$1" x="119.6" y="75.2" smashed="yes" rot="R90">
+<instance part="D1" gate="G$1" x="119.6" y="75.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="119.854" y="72.152" size="1.778" layer="95" align="top-right"/>
 <attribute name="VALUE" x="115.79" y="67.58" size="1.778" layer="96" rot="R180" align="top-right"/>
 </instance>
@@ -5485,13 +5485,13 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TBL_5_08_2415_HORI
 <net name="SATUS_LED$1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="G22"/>
-<pinref part="D17" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="101.82" y1="75.2" x2="117.06" y2="75.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SATUS_LED$2" class="0">
 <segment>
-<pinref part="D17" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="124.68" y1="75.2" x2="129.76" y2="75.2" width="0.1524" layer="91"/>
 </segment>
