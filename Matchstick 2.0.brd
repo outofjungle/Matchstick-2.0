@@ -8,17 +8,17 @@
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -32,9 +32,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -192,7 +192,7 @@
 <text x="25.7" y="11" size="2.54" layer="21" ratio="12" align="bottom-center">CH2</text>
 <text x="25.7" y="27" size="2.54" layer="21" ratio="12" align="top-center">CH3</text>
 <text x="10.8" y="27" size="2.54" layer="21" ratio="12" align="top-center">CH4</text>
-<text x="45.016" y="25" size="1.27" layer="22" rot="MR0">PINOUTS
+<text x="44.016" y="25" size="1.27" layer="22" rot="MR0">PINOUTS
 S1 - G0
 S2 - G33
 D1 - G22</text>
@@ -242,10 +242,10 @@ D1 - G22</text>
 <wire x1="30.5" y1="25.5" x2="30.5" y2="27" width="0.3048" layer="21"/>
 <text x="14.476" y="19" size="2.54" layer="22" ratio="12" rot="MR0" align="center">5V</text>
 <wire x1="12" y1="19" x2="9" y2="19" width="0.3048" layer="22"/>
-<wire x1="46" y1="33" x2="46" y2="24" width="0.1524" layer="22"/>
-<wire x1="46" y1="24" x2="36" y2="24" width="0.1524" layer="22"/>
-<wire x1="36" y1="24" x2="36" y2="33" width="0.1524" layer="22"/>
-<wire x1="36" y1="33" x2="46" y2="33" width="0.1524" layer="22"/>
+<wire x1="45" y1="33" x2="45" y2="24" width="0.1524" layer="22"/>
+<wire x1="45" y1="24" x2="35" y2="24" width="0.1524" layer="22"/>
+<wire x1="35" y1="24" x2="35" y2="33" width="0.1524" layer="22"/>
+<wire x1="35" y1="33" x2="45" y2="33" width="0.1524" layer="22"/>
 </plain>
 <libraries>
 <library name="Capacitor" urn="urn:adsk.eagle:library:16290819">
@@ -883,35 +883,61 @@ Datasheet</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="oshpark-2layer *">
-<description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
+<designrules name="PCBWay_2L_152um-Track">
+<description language="de">&lt;b&gt;PCBWay EAGLE Design Rules für 2 Lagen Standard &lt;/b&gt;
+&lt;br&gt;
+1 Unze, 152µm Leiter, 0.3mm Drill
 &lt;p&gt;
-Please make sure your boards conform to these design rules.
+&lt;b&gt;Bitte beachten:&lt;/b&gt;
+&lt;ul type=&quot;square&quot;&gt;
+	&lt;li&gt;Die Option &lt;b&gt;Abstand-Kupfer/Dimension&lt;/b&gt; ist auf 0,3 mm eingestellt, die Standardeinstellung für Platinen mit gefrästem Platinenumriss. Wenn Sie einen V-Schnitt auf Ihrer Platine benötigen, sollte dieser Parameter auf 0,45 mm eingestellt werden.&lt;/li&gt;
+	&lt;li&gt;Die Mindestbreite des plattierten Schlitzes beträgt 0,5 mm.&lt;/li&gt;
+	&lt;li&gt;Die Mindestbreite des nicht plattierten Schlitzes beträgt 0,8 mm.&lt;/li&gt;
+&lt;/ul&gt;
+Weitere Hinweise finden Sie unter &lt;b&gt;PCBWay PCB-Funktionen&lt;/b&gt; auf unserer Webseite &lt;a href=&quot;https://www.pcbway.com/capabilities.html&quot;&gt;www.pcbway.com&lt;/a&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-Note, that not all DRC settings must be set by the manufacturer. Several can be adjusted for the design, including those listed on our docs page here. 
-&lt;a href=&quot;http://docs.oshpark.com/design-tools/eagle/design-rules-files/&quot;&gt;Adjustable Settings&lt;/a&gt;
+Ihr PCBWay Team
+&lt;br&gt;&lt;br&gt;
+&lt;em&gt;Alle Angaben ohne Gewähr! Eine perfekte Einstellung der Design-Rules kann verständlicherweise nur durch den Anwender erfolgen.&lt;/em&gt;
+&lt;/p&gt;</description>
+<description language="en">&lt;b&gt;PCBWay EAGLE Design Rules for 2 layers standard &lt;/b&gt;
+&lt;br&gt;
+1oz, 152µm tracks, 0.3mm drills
+&lt;p&gt;
+&lt;b&gt;Please note:&lt;/b&gt;
+&lt;ul type=&quot;square&quot;&gt;
+	&lt;li&gt;The option &lt;b&gt;Distance-Copper/Dimension&lt;/b&gt; is set to 0.3mm, the default for boards with a routed board outline. If you require V-cut on your board this parameter should be set to 0.45mm.&lt;/li&gt;
+	&lt;li&gt;Minimum plated slot width is 0.5mm.&lt;/li&gt;
+	&lt;li&gt;Minimum non-plated slot width is 0.8mm.&lt;/li&gt;
+&lt;/ul&gt;
+For more information, see &lt;b&gt;PCBWay PCB Capabilities&lt;/b&gt; on our website &lt;a href=&quot;https://www.pcbway.com/capabilities.html&quot;&gt;www.pcbway.com&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Your PCBWay Team
+&lt;br&gt;&lt;br&gt;
+&lt;em&gt;All statements without guarantee! A perfect setting of design rules can understandably only be performed by the user.&lt;/em&gt;
 &lt;/p&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035559375mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.035559375mm"/>
-<param name="mtIsolate" value="1.6mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.71mm 0.36mm 0.2mm 0.2mm 0.2mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
 <param name="mdPadPad" value="6mil"/>
 <param name="mdPadVia" value="6mil"/>
 <param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
-<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
+<param name="mdViaViaSameLayer" value="0.2mm"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="15mil"/>
-<param name="mdDrill" value="6mil"/>
+<param name="mdCopperDimension" value="0.3mm"/>
+<param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="10mil"/>
-<param name="msMicroVia" value="10mil"/>
+<param name="msDrill" value="0.3mm"/>
+<param name="msMicroVia" value="0.2mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -920,20 +946,20 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="5mil"/>
-<param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="5mil"/>
-<param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="5mil"/>
-<param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="5mil"/>
-<param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="5mil"/>
-<param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="5mil"/>
-<param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="5mil"/>
-<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="rlMinPadTop" value="6mil"/>
+<param name="rlMaxPadTop" value="0.75mm"/>
+<param name="rlMinPadInner" value="6mil"/>
+<param name="rlMaxPadInner" value="0.75mm"/>
+<param name="rlMinPadBottom" value="6mil"/>
+<param name="rlMaxPadBottom" value="0.75mm"/>
+<param name="rlMinViaOuter" value="0.1mm"/>
+<param name="rlMaxViaOuter" value="1mm"/>
+<param name="rlMinViaInner" value="0.1mm"/>
+<param name="rlMaxViaInner" value="1mm"/>
+<param name="rlMinMicroViaOuter" value="0.1mm"/>
+<param name="rlMaxMicroViaOuter" value="0.75mm"/>
+<param name="rlMinMicroViaInner" value="0.1mm"/>
+<param name="rlMaxMicroViaInner" value="0.75mm"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
 <param name="psFirst" value="-1"/>
@@ -941,15 +967,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="2.5mil"/>
-<param name="mlMaxStopFrame" value="2.5mil"/>
+<param name="mlMinStopFrame" value="2mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="15mil"/>
+<param name="mlViaStopLimit" value="0.45mm"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalIsolate" value="0.2mm"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
