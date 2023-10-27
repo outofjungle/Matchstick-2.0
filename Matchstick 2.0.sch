@@ -5259,17 +5259,6 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TBL_5_08_2415_HORI
 <busses>
 </busses>
 <nets>
-<net name="STATUS_LED$2" class="0">
-<segment>
-<pinref part="IC1" gate="P" pin="GND"/>
-<pinref part="SUPPLY2" gate="G$1" pin="GND"/>
-<wire x1="-8.7" y1="54.78" x2="-8.7" y2="52.24" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="-1.08" y1="57.32" x2="-1.08" y2="54.78" width="0.1524" layer="91"/>
-<wire x1="-8.7" y1="54.78" x2="-1.08" y2="54.78" width="0.1524" layer="91"/>
-<junction x="-8.7" y="54.78"/>
-</segment>
-</net>
 <net name="DATA$4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="G25"/>
@@ -5572,6 +5561,15 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TBL_5_08_2415_HORI
 <pinref part="U1" gate="G$1" pin="GND@3"/>
 <wire x1="101.82" y1="54.88" x2="104.36" y2="54.88" width="0.1524" layer="91"/>
 <label x="104.36" y="54.88" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="P" pin="GND"/>
+<pinref part="SUPPLY2" gate="G$1" pin="GND"/>
+<wire x1="-8.7" y1="54.78" x2="-8.7" y2="52.24" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="-1.08" y1="57.32" x2="-1.08" y2="54.78" width="0.1524" layer="91"/>
+<wire x1="-8.7" y1="54.78" x2="-1.08" y2="54.78" width="0.1524" layer="91"/>
+<junction x="-8.7" y="54.78"/>
 </segment>
 </net>
 </nets>
