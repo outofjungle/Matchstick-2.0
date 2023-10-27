@@ -8,17 +8,17 @@
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -32,9 +32,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -181,7 +181,7 @@
 <wire x1="2.5" y1="38" x2="0" y2="35.5" width="0" layer="20" curve="90"/>
 <wire x1="0" y1="35.5" x2="0" y2="2.5" width="0" layer="20"/>
 <wire x1="0" y1="2.5" x2="2.5" y2="0" width="0" layer="20" curve="90"/>
-<text x="38" y="4" size="1.778" layer="22" rot="MR0" align="bottom-right">Matchstick 2.0
+<text x="48" y="25" size="1.778" layer="22" rot="MR0" align="bottom-right">Matchstick 2.0
 0x76656e
 2023</text>
 <text x="10.349" y="10" size="1.27" layer="22" ratio="12" rot="MR270" align="center">G26</text>
@@ -192,7 +192,7 @@
 <text x="25.7" y="11" size="2.54" layer="21" ratio="12" align="bottom-center">CH2</text>
 <text x="25.7" y="27" size="2.54" layer="21" ratio="12" align="top-center">CH3</text>
 <text x="10.8" y="27" size="2.54" layer="21" ratio="12" align="top-center">CH4</text>
-<text x="54.016" y="24.238" size="1.27" layer="22" rot="MR0">PINOUTS
+<text x="45.016" y="25" size="1.27" layer="22" rot="MR0">PINOUTS
 S1 - G0
 S2 - G33
 D1 - G22</text>
@@ -242,6 +242,10 @@ D1 - G22</text>
 <wire x1="30.5" y1="25.5" x2="30.5" y2="27" width="0.3048" layer="21"/>
 <text x="14.476" y="19" size="2.54" layer="22" ratio="12" rot="MR0" align="center">5V</text>
 <wire x1="12" y1="19" x2="9" y2="19" width="0.3048" layer="22"/>
+<wire x1="46" y1="33" x2="46" y2="24" width="0.1524" layer="22"/>
+<wire x1="46" y1="24" x2="36" y2="24" width="0.1524" layer="22"/>
+<wire x1="36" y1="24" x2="36" y2="33" width="0.1524" layer="22"/>
+<wire x1="36" y1="33" x2="46" y2="33" width="0.1524" layer="22"/>
 </plain>
 <libraries>
 <library name="Capacitor" urn="urn:adsk.eagle:library:16290819">
