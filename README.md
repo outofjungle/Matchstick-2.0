@@ -1,5 +1,9 @@
 # Matchstick 2.0
 
+## Schematic
+
+![schematic](./schematic.png)
+
 ## Top
 
 ![top](./top.png)

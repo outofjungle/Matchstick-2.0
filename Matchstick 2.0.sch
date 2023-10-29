@@ -5170,7 +5170,7 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TBL_5_08_2415_HORI
 <part name="J1" library="DC Power Jacks" library_urn="urn:adsk.eagle:library:12119240" deviceset="694106301002" device="" package3d_urn="urn:adsk.eagle:package:12027668/3"/>
 <part name="J3" library="Wurth_Connectors_WR-TBL Rising Cage Clamp" library_urn="urn:adsk.eagle:library:16280519" deviceset="691241510006" device="" package3d_urn="urn:adsk.eagle:package:16248563/2"/>
 <part name="J4" library="Wurth_Connectors_WR-TBL Rising Cage Clamp" library_urn="urn:adsk.eagle:library:16280519" deviceset="691241510006" device="" package3d_urn="urn:adsk.eagle:package:16248563/2"/>
-<part name="C2" library="Capacitor" library_urn="urn:adsk.eagle:library:16290819" deviceset="C-POL" device="RADIAL-11MM-DIA" package3d_urn="urn:adsk.eagle:package:16290899/1" technology="_"/>
+<part name="C2" library="Capacitor" library_urn="urn:adsk.eagle:library:16290819" deviceset="C-POL" device="RADIAL-11MM-DIA" package3d_urn="urn:adsk.eagle:package:16290899/1" technology="_" value="1000 uF"/>
 </parts>
 <sheets>
 <sheet>

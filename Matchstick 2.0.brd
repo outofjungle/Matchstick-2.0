@@ -1204,7 +1204,7 @@ Your PCBWay Team
 <attribute name="NAME" x="37.11" y="34.24" size="1.778" layer="25" ratio="12"/>
 <attribute name="VALUE" x="37.11" y="31.7" size="1.778" layer="27" ratio="12"/>
 </element>
-<element name="C2" library="Capacitor" library_urn="urn:adsk.eagle:library:16290819" package="CAPPRD508W65D1000H1100B" package3d_urn="urn:adsk.eagle:package:16290899/1" value="" x="21" y="19" smashed="yes" rot="R270">
+<element name="C2" library="Capacitor" library_urn="urn:adsk.eagle:library:16290819" package="CAPPRD508W65D1000H1100B" package3d_urn="urn:adsk.eagle:package:16290899/1" value="1000 uF" x="21" y="19" smashed="yes" rot="R270">
 <attribute name="CATEGORY" value="Capacitor" x="21" y="19" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="21" y="19" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="21" y="19" size="1.778" layer="27" rot="R270" display="off"/>
