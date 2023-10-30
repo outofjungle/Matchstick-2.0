@@ -5307,6 +5307,7 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TBL_5_08_2415_HORI
 <wire x1="-1.08" y1="64.94" x2="-1.08" y2="70.02" width="0.1524" layer="91"/>
 <wire x1="-1.08" y1="70.02" x2="-8.7" y2="70.02" width="0.1524" layer="91"/>
 <junction x="-8.7" y="70.02"/>
+<label x="-1.08" y="70.02" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -5570,6 +5571,7 @@ Details see: &lt;a href="https://www.we-online.com/catalog/en/TBL_5_08_2415_HORI
 <wire x1="-1.08" y1="57.32" x2="-1.08" y2="54.78" width="0.1524" layer="91"/>
 <wire x1="-8.7" y1="54.78" x2="-1.08" y2="54.78" width="0.1524" layer="91"/>
 <junction x="-8.7" y="54.78"/>
+<label x="-1.08" y="54.78" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

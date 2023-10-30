@@ -173,14 +173,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="2.5" y1="0" x2="70.5" y2="0" width="0" layer="20"/>
-<wire x1="70.5" y1="0" x2="73" y2="2.5" width="0" layer="20" curve="90"/>
-<wire x1="73" y1="2.5" x2="73" y2="35.5" width="0" layer="20"/>
-<wire x1="73" y1="35.5" x2="70.5" y2="38" width="0" layer="20" curve="90"/>
-<wire x1="70.5" y1="38" x2="2.5" y2="38" width="0" layer="20"/>
-<wire x1="2.5" y1="38" x2="0" y2="35.5" width="0" layer="20" curve="90"/>
-<wire x1="0" y1="35.5" x2="0" y2="2.5" width="0" layer="20"/>
-<wire x1="0" y1="2.5" x2="2.5" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="0" y1="36" x2="0" y2="2" width="0" layer="20"/>
+<wire x1="0" y1="2" x2="2" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="2" y1="0" x2="71" y2="0" width="0" layer="20"/>
+<wire x1="71" y1="0" x2="73" y2="2" width="0" layer="20" curve="90"/>
+<wire x1="73" y1="2" x2="73" y2="36" width="0" layer="20"/>
+<wire x1="73" y1="36" x2="71" y2="38" width="0" layer="20" curve="90"/>
+<wire x1="71" y1="38" x2="2" y2="38" width="0" layer="20"/>
+<wire x1="2" y1="38" x2="0" y2="36" width="0" layer="20" curve="90"/>
 <text x="48" y="25" size="1.778" layer="22" rot="MR0" align="bottom-right">Matchstick 2.0
 0x76656e
 2023</text>
